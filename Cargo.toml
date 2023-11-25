@@ -12,14 +12,5 @@ serde = "1.0"
 serde_derive = "1.0"
 
 [build-dependencies]
-bindgen = { version = "0.60", default-features = false }
+bindgen = { version = "0.60", default-features = false, features = ["runtime"] }
 cc = "1.0"
-
-[profile.release]
-opt-level = 3
-debug = true
-rpath = false
-lto = true
-debug-assertions = false
-codegen-units = 1
-panic = 'unwind'
