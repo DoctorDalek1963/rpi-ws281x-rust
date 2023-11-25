@@ -1,8 +1,8 @@
 use std::mem;
 
-use std::os::raw::{c_int};
+use std::os::raw::c_int;
 
-use super::super::bindings::{ws2811_init, ws2811_t, ws2811_channel_t};
+use super::super::bindings::{ws2811_channel_t, ws2811_init, ws2811_t};
 use super::super::util::Result;
 
 use super::controller::Controller;
